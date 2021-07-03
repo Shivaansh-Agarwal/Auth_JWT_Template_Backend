@@ -13,8 +13,7 @@ profileRouter.route("/").get(async (req, res) => {
     res.status(200).json({
       name: "shivaansh",
       age: 23,
-      pincode: "202001",
-      msg: "This is Profile Page",
+      profession: "Software Development",
     });
   } catch (err) {
     res.status(400).json({ message: "Error in fetching Profile!" });
